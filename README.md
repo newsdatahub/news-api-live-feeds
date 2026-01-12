@@ -34,6 +34,10 @@ Live, neutral news feeds powered by NewsDataHub API. Each feed updates every 60 
 | **Elections News** | US elections, campaigns, and voting | [View Feed](https://newsdatahub.com/live/elections) | Political campaigns monitoring media coverage |
 | **Climate Change News** | Climate crisis, environmental policy, and sustainability | [View Feed](https://newsdatahub.com/live/climate-change) | Environmental organizations tracking policy developments |
 | **Walmart News** | Walmart business updates and retail strategy | [View Feed](https://newsdatahub.com/live/walmart) | Retail analysts monitoring Walmart's strategy |
+| **German News** | German-language news covering politics, business, finance, and technology | [View Feed](https://newsdatahub.com/live/german-news) | German-speaking audiences and businesses tracking German media |
+| **French News** | French-language news from major French outlets including Franceinfo and France 24 | [View Feed](https://newsdatahub.com/live/french-news) | French-speaking audiences and international businesses monitoring French developments |
+| **Canadian News (English)** | Canadian English-language news from CBC, CTV, and major regional outlets | [View Feed](https://newsdatahub.com/live/canadian-news-english) | Canadian audiences and expats following national and regional coverage |
+| **Belgium News** | Belgian news in French and Dutch from RTBF, La Libre, De Morgen, and Het Laatste Nieuws | [View Feed](https://newsdatahub.com/live/belgium-news) | Belgian audiences and EU analysts tracking Belgian perspectives |
 
 ## How These Feeds Are Built
 
@@ -278,6 +282,51 @@ curl -X GET "https://api.newsdatahub.com/v1/news?q=Walmart&language=en&search_in
   -H "X-API-Key: YOUR_API_KEY" \
   -H "User-Agent: YourApp/1.0"
 ```
+
+#### German News
+
+  ```bash
+  curl -X GET "https://api.newsdatahub.com/v1/news?language=de&source_type=mainstream_news&topic=politics,business,finance,technology&sort_b
+  y=date&per_page=100&deduplicate=true" \
+    -H "X-API-Key: YOUR_API_KEY" \
+    -H "User-Agent: YourApp/1.0"
+```
+#### French News
+
+```bash
+  curl -X GET "https://api.newsdatahub.com/v1/news?language=fr&source_type=mainstream_news&topic=politics,business,finance,technology&source
+  =Franceinfo,France%2024,TF1Info,CNews%20Matin,RFI%20Khmer&sort_by=date&per_page=100&deduplicate=true" \
+    -H "X-API-Key: YOUR_API_KEY" \
+    -H "User-Agent: YourApp/1.0"
+```
+
+#### Canadian News (English)
+
+  Note: This feed uses a multi-source approach, making parallel API calls to multiple Canadian sources. For simplicity, here's a single-call
+   approximation using comma-separated sources:
+```bash
+  curl -X GET "https://api.newsdatahub.com/v1/news?language=en&source=CBC%20News,CTV%20News,CityNews%20Toronto,CityNews%20Kitchener,London%2
+  0Free%20Press,Windsor%20Star&sort_by=date&per_page=100&deduplicate=true" \
+    -H "X-API-Key: YOUR_API_KEY" \
+    -H "User-Agent: YourApp/1.0"
+```
+
+  For the production multi-source implementation with weighted blending (CBC: 20, CTV: 25, CityNews Toronto: 20, CityNews Kitchener: 10,
+  London Free Press: 20, Windsor Star: 20), you would make 6 parallel requests and merge results client-side.
+
+#### Belgium News
+
+  Note: This feed uses a multi-source approach for diverse Belgian coverage. Here's a single-call approximation:
+
+```bash
+  curl -X GET "https://api.newsdatahub.com/v1/news?source=RTBF,La%20Libre%20Belgique,De%20Morgen,Het%20Laatste%20Nieuws&sort_by=date&per_pag
+  e=100&deduplicate=true" \
+    -H "X-API-Key: YOUR_API_KEY" \
+    -H "User-Agent: YourApp/1.0"
+```
+
+  For the production multi-source implementation with weighted blending (RTBF: 50, La Libre: 40, De Morgen: 40, Het Laatste Nieuws: 60), you
+   would make 4 parallel requests and merge results client-side.
 
 ---
 
