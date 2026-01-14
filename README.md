@@ -20,16 +20,23 @@ Live, neutral news feeds powered by NewsDataHub API. Each feed updates every 60 
 | **United States News** | US news, politics, and business | [View Feed](https://newsdatahub.com/live/united-states) | International audiences tracking US developments |
 | **Europe News** | European news, EU politics, and economy | [View Feed](https://newsdatahub.com/live/europe) | EU policy analysts monitoring regulatory developments |
 | **China News** | China news, economy, and politics | [View Feed](https://newsdatahub.com/live/china) | Business analysts tracking Chinese economic policy |
+| **China Economy** | Chinese economy news including employment, growth, manufacturing | [View Feed](https://newsdatahub.com/live/china-economy) | Supply chain managers monitoring manufacturing and trade |
 | **India News** | India news, economy, and politics | [View Feed](https://newsdatahub.com/live/india) | Investors monitoring Indian market opportunities |
 | **AI & Machine Learning** | Artificial intelligence and ML industry developments | [View Feed](https://newsdatahub.com/live/ai) | AI researchers staying current with breakthroughs |
 | **Semiconductors & Chips** | Semiconductor industry and chip technology | [View Feed](https://newsdatahub.com/live/semiconductors) | Chip manufacturers tracking capacity and technology |
 | **Electric Vehicles** | EV industry, battery technology, and charging infrastructure | [View Feed](https://newsdatahub.com/live/electric-vehicles) | Automotive manufacturers tracking EV market trends |
 | **Healthcare News** | Healthcare industry, medical breakthroughs, and pharma | [View Feed](https://newsdatahub.com/live/healthcare) | Pharmaceutical companies monitoring drug approvals |
+| **Pharma & Biotech** | FDA/EMA approvals, clinical trials, drug recalls, and safety warnings | [View Feed](https://newsdatahub.com/live/pharma-biotech) | Pharma teams tracking regulatory milestones |
+| **Healthcare Costs** | Drug pricing, insurance premiums, and healthcare affordability | [View Feed](https://newsdatahub.com/live/healthcare-costs) | Policy researchers tracking affordability debates |
 | **Fintech News** | Financial technology, digital banking, and payments | [View Feed](https://newsdatahub.com/live/fintech) | Banks tracking digital transformation trends |
 | **Real Estate News** | Property markets, housing, and commercial real estate | [View Feed](https://newsdatahub.com/live/real-estate) | Real estate investors tracking market trends |
 | **Technology News** | Tech industry, innovation, and digital transformation | [View Feed](https://newsdatahub.com/live/technology) | Technology companies monitoring industry trends |
 | **Energy News** | Energy markets, oil, gas, and renewables | [View Feed](https://newsdatahub.com/live/energy) | Energy companies monitoring commodity prices |
+| **Mining News** | Mining projects, exploration, production, and business updates | [View Feed](https://newsdatahub.com/live/mining) | Mining analysts monitoring project approvals |
+| **Commodities News** | Cocoa, corn, wheat, sugar, and food supply chains | [View Feed](https://newsdatahub.com/live/commodities) | Market researchers tracking commodities coverage |
 | **Finance News** | Financial markets, banking, and investment | [View Feed](https://newsdatahub.com/live/finance) | Financial advisors staying current with markets |
+| **Inflation & Interest Rates** | CPI data, Federal Reserve decisions, and monetary policy | [View Feed](https://newsdatahub.com/live/inflation-interest-rates) | Investment analysts tracking policy shifts |
+| **Macro Economic News** | GDP, inflation, employment data, and central bank policy | [View Feed](https://newsdatahub.com/live/macro-economic) | Economists monitoring economic data releases |
 | **Entertainment News** | Media, streaming, and entertainment industry | [View Feed](https://newsdatahub.com/live/entertainment) | Media companies tracking competitor releases |
 | **Elections News** | US elections, campaigns, and voting | [View Feed](https://newsdatahub.com/live/elections) | Political campaigns monitoring media coverage |
 | **Climate Change News** | Climate crisis, environmental policy, and sustainability | [View Feed](https://newsdatahub.com/live/climate-change) | Environmental organizations tracking policy developments |
@@ -38,6 +45,10 @@ Live, neutral news feeds powered by NewsDataHub API. Each feed updates every 60 
 | **French News** | French-language news from major French outlets including Franceinfo and France 24 | [View Feed](https://newsdatahub.com/live/french-news) | French-speaking audiences and international businesses monitoring French developments |
 | **Canadian News (English)** | Canadian English-language news from CBC, CTV, and major regional outlets | [View Feed](https://newsdatahub.com/live/canadian-news-english) | Canadian audiences and expats following national and regional coverage |
 | **Belgium News** | Belgian news in French and Dutch from RTBF, La Libre, De Morgen, and Het Laatste Nieuws | [View Feed](https://newsdatahub.com/live/belgium-news) | Belgian audiences and EU analysts tracking Belgian perspectives |
+| **Maritime Logistics** | Marine operations, shipping technology, and maritime trade | [View Feed](https://newsdatahub.com/live/maritime-logistics) | Port operators monitoring industry trends |
+| **Maritime Security** | Naval strategy, maritime policy, and maritime law | [View Feed](https://newsdatahub.com/live/maritime-security) | Naval strategists monitoring security developments |
+| **Shipping Logistics** | Container shipping, freight operations, and supply chain management | [View Feed](https://newsdatahub.com/live/shipping-logistics) | Freight forwarders tracking shipping rates |
+| **Manufacturing Industry** | Factory fires, accidents, closures, and production disruptions | [View Feed](https://newsdatahub.com/live/manufacturing-industry) | Supply chain managers monitoring facility incidents |
 
 ## How These Feeds Are Built
 
@@ -49,7 +60,6 @@ Each live news feed is powered by the NewsDataHub API [`/v1/news`](https://newsd
 - **Geographic Targeting**: Use country and source type parameters for regional focus
 - **Date Sorting**: Sort by publication date (`sort_by=date`) for chronological order
 - **Deduplication**: Remove duplicate articles with identical titles (`deduplicate=true`)
-- **60-Second Updates**: Each feed queries the API every 60 seconds for fresh articles
 
 All feeds query NewsDataHub's continuously updated database of articles from 6,500+ verified news sources across 170+ countries, covering mainstream media, digital natives, wire services, and specialized publications.
 
@@ -171,6 +181,14 @@ curl -X GET "https://api.newsdatahub.com/v1/news?q=China%20OR%20Chinese%20OR%20B
   -H "User-Agent: YourApp/1.0"
 ```
 
+#### China Economy News
+
+```bash
+curl -X GET "https://api.newsdatahub.com/v1/news?q=(China%20OR%20Chinese%20OR%20Beijing)%20AND%20(GDP%20OR%20%22economic%20growth%22%20OR%20PMI%20OR%20%22manufacturing%20PMI%22%20OR%20unemployment%20OR%20%22jobless%22)&language=en&search_in=title&sort_by=date&per_page=100&deduplicate=true" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "User-Agent: YourApp/1.0"
+```
+
 #### India News
 
 ```bash
@@ -211,6 +229,22 @@ curl -X GET "https://api.newsdatahub.com/v1/news?q=(((pharma%20OR%20pharmaceutic
   -H "User-Agent: YourApp/1.0"
 ```
 
+#### Pharma & Biotech News
+
+```bash
+curl -X GET "https://api.newsdatahub.com/v1/news?q=(FDA%20OR%20EMA%20OR%20%22clinical%20trial%22%20OR%20%22Phase%20I%22%20OR%20%22Phase%20II%22%20OR%20%22Phase%20III%22%20OR%20approval%20OR%20%22label%20change%22%20OR%20%22safety%20warning%22%20OR%20recall)%20AND%20NOT%20(%22market%20size%22%20OR%20CAGR%20OR%20forecast%20OR%20%22market%20report%22%20OR%20%22market%20analysis%22%20OR%20slideshow%20OR%20presentation%20OR%20conference)&language=en&search_in=title&sort_by=date&per_page=40&deduplicate=true&source_type=mainstream_news,news_agency,magazine,specialty_news&topic=biotechnology,pharmaceuticals&exclude_topic=finance,investment" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "User-Agent: YourApp/1.0"
+```
+
+#### Healthcare Costs News
+
+```bash
+curl -X GET "https://api.newsdatahub.com/v1/news?q=((%22healthcare%20costs%22%20OR%20%22health%20insurance%22%20OR%20%22drug%20pricing%22%20OR%20%22prescription%20costs%22%20OR%20%22medical%20bills%22%20OR%20%22hospital%20billing%22%20OR%20%22insurance%20premiums%22%20OR%20Medicare%20OR%20Medicaid%20OR%20ACA%20OR%20%22pharmaceutical%20pricing%22%20OR%20%22out-of-pocket%20costs%22%20OR%20copay%20OR%20deductible%20OR%20%22health%20affordability%22)%20AND%20(increase%20OR%20rising%20OR%20surge%20OR%20reform%20OR%20policy%20OR%20regulation%20OR%20debate%20OR%20legislation))%20AND%20NOT%20(%22General%20Hospital%22%20OR%20%22hospital%20after%22%20OR%20%22rushed%20to%22%20OR%20%22taken%20to%22%20OR%20accident%20OR%20crime%20OR%20emergency%20OR%20celebrity%20OR%20crypto%20OR%20auto)&language=en&search_in=title&sort_by=date&per_page=100&deduplicate=true" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "User-Agent: YourApp/1.0"
+```
+
 #### Fintech News
 
 ```bash
@@ -243,10 +277,42 @@ curl -X GET "https://api.newsdatahub.com/v1/news?q=((energy%20OR%20oil%20OR%20ga
   -H "User-Agent: YourApp/1.0"
 ```
 
+#### Mining News
+
+```bash
+curl -X GET "https://api.newsdatahub.com/v1/news?source=Australian%20Mining,International%20Mining,Mining%20Business%20Africa,Mining%20Zimbabwe&language=en&sort_by=date&per_page=100&deduplicate=true" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "User-Agent: YourApp/1.0"
+```
+
+#### Commodities News
+
+```bash
+curl -X GET "https://api.newsdatahub.com/v1/news?q=commodities%20OR%20cocoa%20OR%20corn%20OR%20wheat%20OR%20sugar&language=en&search_in=title&sort_by=date&per_page=100&deduplicate=true&source=Food%20Business%20News,SupplyChain247,Supply%20Chain%20Brain,Nasdaq,Manufacturing%20EIN%20News,Seeking%20Alpha,Bloomberg" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "User-Agent: YourApp/1.0"
+```
+
 #### Finance News
 
 ```bash
-curl -X GET "https://api.newsdatahub.com/v1/news?q=banking%20OR%20(financial%20AND%20investment)%20OR%20(stock%20AND%20market)%20OR%20(trading%20AND%20(stock%20OR%20bond%20OR%20crypto%20OR%20asset)%20OR%20(financial%20AND%20services)&language=en&search_in=title&sort_by=date&per_page=100&deduplicate=true" \
+curl -X GET "https://api.newsdatahub.com/v1/news?q=(banking%20OR%20(financial%20AND%20(services%20OR%20markets%20OR%20institution%20OR%20sector))%20OR%20(stock%20AND%20market)%20OR%20(trading%20AND%20(stock%20OR%20bond%20OR%20equity%20OR%20forex))%20OR%20investment%20OR%20(capital%20AND%20markets))%20AND%20NOT%20(%22banking%20on%22%20OR%20sport%20OR%20sports%20OR%20football%20OR%20cricket%20OR%20rugby%20OR%20tennis%20OR%20athlete%20OR%20NFL%20OR%20playoff%20OR%20tourism%20OR%20wellness%20OR%20beauty%20OR%20collagen%20OR%20%22investment%20tips%22%20OR%20%22stock%20tips%22%20OR%20award%20OR%20awards%20OR%20grant%20OR%20grants)&language=en&search_in=title&sort_by=date&per_page=100&deduplicate=true" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "User-Agent: YourApp/1.0"
+```
+
+#### Inflation & Interest Rates News
+
+```bash
+curl -X GET "https://api.newsdatahub.com/v1/news?q=((inflation%20OR%20CPI%20OR%20%22consumer%20price%20index%22%20OR%20PPI%20OR%20%22producer%20price%20index%22)%20OR%20(%22interest%20rate%22%20OR%20%22interest%20rates%22%20OR%20%22rate%20hike%22%20OR%20%22rate%20cut%22%20OR%20%22monetary%20policy%22%20OR%20%22Fed%20rate%22%20OR%20FOMC)%20OR%20(%22Federal%20Reserve%22%20OR%20%22central%20bank%22%20OR%20ECB%20OR%20%22Bank%20of%20England%22%20OR%20%22Bank%20of%20Japan%22))%20AND%20NOT%20(earnings%20OR%20revenue%20OR%20stock%20OR%20equity%20OR%20IPO%20OR%20merger%20OR%20acquisition%20OR%20cricket%20OR%20Ashes%20OR%20wicket%20OR%20innings%20OR%20%22test%20match%22)&language=en&search_in=title&sort_by=date&per_page=100&deduplicate=true&source=Nasdaq,Bloomberg,Firstpost,The%20Economic%20Times,Financial%20Times,Financial%20Post,Seeking%20Alpha" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "User-Agent: YourApp/1.0"
+```
+
+#### Macro Economic News
+
+```bash
+curl -X GET "https://api.newsdatahub.com/v1/news?q=((inflation%20OR%20CPI%20OR%20%22consumer%20price%20index%22%20OR%20PPI%20OR%20%22producer%20price%20index%22%20OR%20PCE)%20OR%20(GDP%20OR%20%22economic%20growth%22%20OR%20recession%20OR%20%22business%20cycle%22)%20OR%20(%22nonfarm%20payrolls%22%20OR%20unemployment%20OR%20%22jobless%20claims%22%20OR%20%22jobs%20report%22%20OR%20employment)%20OR%20(%22Federal%20Reserve%22%20OR%20%22central%20bank%22%20OR%20FOMC%20OR%20ECB%20OR%20%22Bank%20of%20England%22%20OR%20%22Bank%20of%20Japan%22%20OR%20%22rate%20hike%22%20OR%20%22rate%20cut%22%20OR%20%22monetary%20policy%22)%20OR%20(PMI%20OR%20ISM%20OR%20%22manufacturing%20index%22%20OR%20%22services%20index%22))%20AND%20NOT%20(earnings%20OR%20revenue%20OR%20stock%20OR%20stocks%20OR%20equity%20OR%20IPO%20OR%20merger%20OR%20acquisition%20OR%20cricket%20OR%20Ashes%20OR%20wicket%20OR%20innings%20OR%20%22test%20match%22%20OR%20sports%20OR%20NFL%20OR%20NBA%20OR%20tournament)&language=en&search_in=title&sort_by=date&per_page=100&deduplicate=true&source=Bloomberg,Financial%20Times,The%20Economic%20Times,Nasdaq,Financial%20Post,Seeking%20Alpha,Reuters" \
   -H "X-API-Key: YOUR_API_KEY" \
   -H "User-Agent: YourApp/1.0"
 ```
@@ -327,6 +393,38 @@ curl -X GET "https://api.newsdatahub.com/v1/news?q=Walmart&language=en&search_in
 
   For the production multi-source implementation with weighted blending (RTBF: 50, La Libre: 40, De Morgen: 40, Het Laatste Nieuws: 60), you
    would make 4 parallel requests and merge results client-side.
+
+#### Maritime Logistics News
+
+```bash
+curl -X GET "https://api.newsdatahub.com/v1/news?q=maritime%20OR%20shipping%20OR%20marine%20OR%20port%20OR%20ports%20OR%20vessel%20OR%20cargo&language=en&search_in=title&sort_by=date&per_page=100&deduplicate=true&source=MarineLink,InfoMarine,Shipfinex,Africa%20Ports,Container%20News,Supply%20Chain%20Brain,SupplyChain247" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "User-Agent: YourApp/1.0"
+```
+
+#### Maritime Security News
+
+```bash
+curl -X GET "https://api.newsdatahub.com/v1/news?q=maritime%20OR%20naval%20OR%20marine%20OR%20shipping%20OR%20vessel%20OR%20port&language=en&search_in=title&sort_by=date&per_page=100&deduplicate=true&source=CIMSEC,Defence%20Blog,Cruise%20Law%20News" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "User-Agent: YourApp/1.0"
+```
+
+#### Shipping Logistics News
+
+```bash
+curl -X GET "https://api.newsdatahub.com/v1/news?q=shipping%20OR%20freight%20OR%20logistics%20OR%20container%20OR%20supply%20chain%20OR%20port%20OR%20cargo%20OR%20rail%20OR%20intermodal&language=en&search_in=title&sort_by=date&per_page=100&deduplicate=true&source=Container%20News,DHL%20Freight%20Connections,Africa%20Ports,Journal%20of%20Commerce,Transport%20Topics,Supply%20Chain%20Brain,SupplyChain247,Freight%20Caviar,Progressive%20Railroading,Logistics%20Management%20News" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "User-Agent: YourApp/1.0"
+```
+
+#### Manufacturing Industry News
+
+```bash
+curl -X GET "https://api.newsdatahub.com/v1/news?q=(factory%20OR%20%22manufacturing%20facility%22%20OR%20%22production%20plant%22%20OR%20%22assembly%20plant%22)%20AND%20(shutdown%20OR%20closure%20OR%20fire%20OR%20explosion%20OR%20accident%20OR%20disruption%20OR%20halt)%20NOT%20(%22power%20plant%22%20OR%20%22water%20treatment%22%20OR%20wastewater%20OR%20%22sewage%20plant%22)&language=en&search_in=title&sort_by=date&per_page=100&deduplicate=true" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "User-Agent: YourApp/1.0"
+```
 
 ---
 
