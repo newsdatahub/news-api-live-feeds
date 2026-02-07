@@ -67,7 +67,8 @@ All feeds query NewsDataHub's continuously updated database of articles from 6,5
 
 ### Example API Calls
 
-Below are curl examples for each feed showing how to replicate them using the NewsDataHub API. Replace `YOUR_API_KEY` with your actual API key from [newsdatahub.com](https://newsdatahub.com?utm_source=github&utm_campaign=news-api-live-feeds-signup).
+Below are curl examples for each feed showing how to replicate them using the NewsDataHub API. 
+Replace `YOUR_API_KEY` with your actual API key from [newsdatahub.com](https://newsdatahub.com).
 
 #### Cybersecurity News
 
