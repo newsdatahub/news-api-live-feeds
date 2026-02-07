@@ -6,53 +6,53 @@ Live, neutral news feeds powered by NewsDataHub API. Each feed updates every 60 
 
 | Name | Description | Live URL | Use Case |
 |------|-------------|----------|----------|
-| **Cybersecurity News** | Coverage of data breaches, ransomware attacks, and security threats | [View Feed](https://newsdatahub.com/live/cybersecurity) | Security teams monitoring global threat landscape |
-| **Layoffs & Job Cuts** | Corporate layoffs, job cuts, and hiring freezes | [View Feed](https://newsdatahub.com/live/layoffs) | HR professionals tracking workforce trends |
-| **Corporate Legal News** | Corporate lawsuits, regulatory actions, and legal penalties | [View Feed](https://newsdatahub.com/live/corporate-legal) | Legal departments monitoring industry litigation |
-| **Tech Outages** | Technology outages, cloud failures, and platform downtime | [View Feed](https://newsdatahub.com/live/tech-outages) | IT operations tracking service disruptions |
-| **Supply Chain News** | Supply chain disruptions, logistics issues, and shortages | [View Feed](https://newsdatahub.com/live/supply-chain) | Supply chain managers monitoring bottlenecks |
-| **Fraud & Financial Crime** | Fraud cases, financial crime, and scam alerts | [View Feed](https://newsdatahub.com/live/fraud) | Financial institutions tracking fraud schemes |
-| **Ukraine War News** | Ukraine-Russia conflict developments | [View Feed](https://newsdatahub.com/live/ukraine-war) | Defense analysts tracking military developments |
-| **Middle East Conflict** | Middle East conflicts and regional tensions | [View Feed](https://newsdatahub.com/live/middle-east-conflict) | Foreign policy analysts monitoring regional dynamics |
-| **Taiwan-China News** | Taiwan-China relations and regional developments | [View Feed](https://newsdatahub.com/live/taiwan-china) | Geopolitical analysts monitoring cross-strait tensions |
-| **Defense & Military News** | Defense industry and military technology developments | [View Feed](https://newsdatahub.com/live/defense-news) | Defense contractors tracking procurement opportunities |
-| **Global Conflicts** | Worldwide conflicts and international tensions | [View Feed](https://newsdatahub.com/live/global-conflicts) | Security analysts tracking global military conflicts |
-| **United States News** | US news, politics, and business | [View Feed](https://newsdatahub.com/live/united-states) | International audiences tracking US developments |
-| **Europe News** | European news, EU politics, and economy | [View Feed](https://newsdatahub.com/live/europe) | EU policy analysts monitoring regulatory developments |
-| **China News** | China news, economy, and politics | [View Feed](https://newsdatahub.com/live/china) | Business analysts tracking Chinese economic policy |
-| **China Economy** | Chinese economy news including employment, growth, manufacturing | [View Feed](https://newsdatahub.com/live/china-economy) | Supply chain managers monitoring manufacturing and trade |
-| **India News** | India news, economy, and politics | [View Feed](https://newsdatahub.com/live/india) | Investors monitoring Indian market opportunities |
-| **AI & Machine Learning** | Artificial intelligence and ML industry developments | [View Feed](https://newsdatahub.com/live/ai) | AI researchers staying current with breakthroughs |
-| **Semiconductors & Chips** | Semiconductor industry and chip technology | [View Feed](https://newsdatahub.com/live/semiconductors) | Chip manufacturers tracking capacity and technology |
-| **Electric Vehicles** | EV industry, battery technology, and charging infrastructure | [View Feed](https://newsdatahub.com/live/electric-vehicles) | Automotive manufacturers tracking EV market trends |
-| **Healthcare News** | Healthcare industry, medical breakthroughs, and pharma | [View Feed](https://newsdatahub.com/live/healthcare) | Pharmaceutical companies monitoring drug approvals |
-| **Pharma & Biotech** | FDA/EMA approvals, clinical trials, drug recalls, and safety warnings | [View Feed](https://newsdatahub.com/live/pharma-biotech) | Pharma teams tracking regulatory milestones |
-| **Healthcare Costs** | Drug pricing, insurance premiums, and healthcare affordability | [View Feed](https://newsdatahub.com/live/healthcare-costs) | Policy researchers tracking affordability debates |
-| **Fintech News** | Financial technology, digital banking, and payments | [View Feed](https://newsdatahub.com/live/fintech) | Banks tracking digital transformation trends |
-| **Real Estate News** | Property markets, housing, and commercial real estate | [View Feed](https://newsdatahub.com/live/real-estate) | Real estate investors tracking market trends |
-| **Technology News** | Tech industry, innovation, and digital transformation | [View Feed](https://newsdatahub.com/live/technology) | Technology companies monitoring industry trends |
-| **Energy News** | Energy markets, oil, gas, and renewables | [View Feed](https://newsdatahub.com/live/energy) | Energy companies monitoring commodity prices |
-| **Mining News** | Mining projects, exploration, production, and business updates | [View Feed](https://newsdatahub.com/live/mining) | Mining analysts monitoring project approvals |
-| **Commodities News** | Cocoa, corn, wheat, sugar, and food supply chains | [View Feed](https://newsdatahub.com/live/commodities) | Market researchers tracking commodities coverage |
-| **Finance News** | Financial markets, banking, and investment | [View Feed](https://newsdatahub.com/live/finance) | Financial advisors staying current with markets |
-| **Inflation & Interest Rates** | CPI data, Federal Reserve decisions, and monetary policy | [View Feed](https://newsdatahub.com/live/inflation-interest-rates) | Investment analysts tracking policy shifts |
-| **Macro Economic News** | GDP, inflation, employment data, and central bank policy | [View Feed](https://newsdatahub.com/live/macro-economic) | Economists monitoring economic data releases |
-| **Entertainment News** | Media, streaming, and entertainment industry | [View Feed](https://newsdatahub.com/live/entertainment) | Media companies tracking competitor releases |
-| **Elections News** | US elections, campaigns, and voting | [View Feed](https://newsdatahub.com/live/elections) | Political campaigns monitoring media coverage |
-| **Climate Change News** | Climate crisis, environmental policy, and sustainability | [View Feed](https://newsdatahub.com/live/climate-change) | Environmental organizations tracking policy developments |
-| **Walmart News** | Walmart business updates and retail strategy | [View Feed](https://newsdatahub.com/live/walmart) | Retail analysts monitoring Walmart's strategy |
-| **German News** | German-language news covering politics, business, finance, and technology | [View Feed](https://newsdatahub.com/live/german-news) | German-speaking audiences and businesses tracking German media |
-| **French News** | French-language news from major French outlets including Franceinfo and France 24 | [View Feed](https://newsdatahub.com/live/french-news) | French-speaking audiences and international businesses monitoring French developments |
-| **Canadian News (English)** | Canadian English-language news from CBC, CTV, and major regional outlets | [View Feed](https://newsdatahub.com/live/canadian-news-english) | Canadian audiences and expats following national and regional coverage |
-| **Belgium News** | Belgian news in French and Dutch from RTBF, La Libre, De Morgen, and Het Laatste Nieuws | [View Feed](https://newsdatahub.com/live/belgium-news) | Belgian audiences and EU analysts tracking Belgian perspectives |
-| **Maritime Logistics** | Marine operations, shipping technology, and maritime trade | [View Feed](https://newsdatahub.com/live/maritime-logistics) | Port operators monitoring industry trends |
-| **Maritime Security** | Naval strategy, maritime policy, and maritime law | [View Feed](https://newsdatahub.com/live/maritime-security) | Naval strategists monitoring security developments |
-| **Shipping Logistics** | Container shipping, freight operations, and supply chain management | [View Feed](https://newsdatahub.com/live/shipping-logistics) | Freight forwarders tracking shipping rates |
-| **Manufacturing Industry** | Factory fires, accidents, closures, and production disruptions | [View Feed](https://newsdatahub.com/live/manufacturing-industry) | Supply chain managers monitoring facility incidents |
+| **Cybersecurity News** | Coverage of data breaches, ransomware attacks, and security threats | [View Feed](https://newsdatahub.com/live/cybersecurity?utm_source=github&utm_campaign=news-api-live-feeds-cybersecurity) | Security teams monitoring global threat landscape |
+| **Layoffs & Job Cuts** | Corporate layoffs, job cuts, and hiring freezes | [View Feed](https://newsdatahub.com/live/layoffs?utm_source=github&utm_campaign=news-api-live-feeds-layoffs) | HR professionals tracking workforce trends |
+| **Corporate Legal News** | Corporate lawsuits, regulatory actions, and legal penalties | [View Feed](https://newsdatahub.com/live/corporate-legal?utm_source=github&utm_campaign=news-api-live-feeds-corporate-legal) | Legal departments monitoring industry litigation |
+| **Tech Outages** | Technology outages, cloud failures, and platform downtime | [View Feed](https://newsdatahub.com/live/tech-outages?utm_source=github&utm_campaign=news-api-live-feeds-tech-outages) | IT operations tracking service disruptions |
+| **Supply Chain News** | Supply chain disruptions, logistics issues, and shortages | [View Feed](https://newsdatahub.com/live/supply-chain?utm_source=github&utm_campaign=news-api-live-feeds-supply-chain) | Supply chain managers monitoring bottlenecks |
+| **Fraud & Financial Crime** | Fraud cases, financial crime, and scam alerts | [View Feed](https://newsdatahub.com/live/fraud?utm_source=github&utm_campaign=news-api-live-feeds-fraud) | Financial institutions tracking fraud schemes |
+| **Ukraine War News** | Ukraine-Russia conflict developments | [View Feed](https://newsdatahub.com/live/ukraine-war?utm_source=github&utm_campaign=news-api-live-feeds-ukraine-war) | Defense analysts tracking military developments |
+| **Middle East Conflict** | Middle East conflicts and regional tensions | [View Feed](https://newsdatahub.com/live/middle-east-conflict?utm_source=github&utm_campaign=news-api-live-feeds-middle-east-conflict) | Foreign policy analysts monitoring regional dynamics |
+| **Taiwan-China News** | Taiwan-China relations and regional developments | [View Feed](https://newsdatahub.com/live/taiwan-china?utm_source=github&utm_campaign=news-api-live-feeds-taiwan-china) | Geopolitical analysts monitoring cross-strait tensions |
+| **Defense & Military News** | Defense industry and military technology developments | [View Feed](https://newsdatahub.com/live/defense-news?utm_source=github&utm_campaign=news-api-live-feeds-defense-news) | Defense contractors tracking procurement opportunities |
+| **Global Conflicts** | Worldwide conflicts and international tensions | [View Feed](https://newsdatahub.com/live/global-conflicts?utm_source=github&utm_campaign=news-api-live-feeds-global-conflicts) | Security analysts tracking global military conflicts |
+| **United States News** | US news, politics, and business | [View Feed](https://newsdatahub.com/live/united-states?utm_source=github&utm_campaign=news-api-live-feeds-united-states) | International audiences tracking US developments |
+| **Europe News** | European news, EU politics, and economy | [View Feed](https://newsdatahub.com/live/europe?utm_source=github&utm_campaign=news-api-live-feeds-europe) | EU policy analysts monitoring regulatory developments |
+| **China News** | China news, economy, and politics | [View Feed](https://newsdatahub.com/live/china?utm_source=github&utm_campaign=news-api-live-feeds-china) | Business analysts tracking Chinese economic policy |
+| **China Economy** | Chinese economy news including employment, growth, manufacturing | [View Feed](https://newsdatahub.com/live/china-economy?utm_source=github&utm_campaign=news-api-live-feeds-china-economy) | Supply chain managers monitoring manufacturing and trade |
+| **India News** | India news, economy, and politics | [View Feed](https://newsdatahub.com/live/india?utm_source=github&utm_campaign=news-api-live-feeds-india) | Investors monitoring Indian market opportunities |
+| **AI & Machine Learning** | Artificial intelligence and ML industry developments | [View Feed](https://newsdatahub.com/live/ai?utm_source=github&utm_campaign=news-api-live-feeds-ai) | AI researchers staying current with breakthroughs |
+| **Semiconductors & Chips** | Semiconductor industry and chip technology | [View Feed](https://newsdatahub.com/live/semiconductors?utm_source=github&utm_campaign=news-api-live-feeds-semiconductors) | Chip manufacturers tracking capacity and technology |
+| **Electric Vehicles** | EV industry, battery technology, and charging infrastructure | [View Feed](https://newsdatahub.com/live/electric-vehicles?utm_source=github&utm_campaign=news-api-live-feeds-electric-vehicles) | Automotive manufacturers tracking EV market trends |
+| **Healthcare News** | Healthcare industry, medical breakthroughs, and pharma | [View Feed](https://newsdatahub.com/live/healthcare?utm_source=github&utm_campaign=news-api-live-feeds-healthcare) | Pharmaceutical companies monitoring drug approvals |
+| **Pharma & Biotech** | FDA/EMA approvals, clinical trials, drug recalls, and safety warnings | [View Feed](https://newsdatahub.com/live/pharma-biotech?utm_source=github&utm_campaign=news-api-live-feeds-pharma-biotech) | Pharma teams tracking regulatory milestones |
+| **Healthcare Costs** | Drug pricing, insurance premiums, and healthcare affordability | [View Feed](https://newsdatahub.com/live/healthcare-costs?utm_source=github&utm_campaign=news-api-live-feeds-healthcare-costs) | Policy researchers tracking affordability debates |
+| **Fintech News** | Financial technology, digital banking, and payments | [View Feed](https://newsdatahub.com/live/fintech?utm_source=github&utm_campaign=news-api-live-feeds-fintech) | Banks tracking digital transformation trends |
+| **Real Estate News** | Property markets, housing, and commercial real estate | [View Feed](https://newsdatahub.com/live/real-estate?utm_source=github&utm_campaign=news-api-live-feeds-real-estate) | Real estate investors tracking market trends |
+| **Technology News** | Tech industry, innovation, and digital transformation | [View Feed](https://newsdatahub.com/live/technology?utm_source=github&utm_campaign=news-api-live-feeds-technology) | Technology companies monitoring industry trends |
+| **Energy News** | Energy markets, oil, gas, and renewables | [View Feed](https://newsdatahub.com/live/energy?utm_source=github&utm_campaign=news-api-live-feeds-energy) | Energy companies monitoring commodity prices |
+| **Mining News** | Mining projects, exploration, production, and business updates | [View Feed](https://newsdatahub.com/live/mining?utm_source=github&utm_campaign=news-api-live-feeds-mining) | Mining analysts monitoring project approvals |
+| **Commodities News** | Cocoa, corn, wheat, sugar, and food supply chains | [View Feed](https://newsdatahub.com/live/commodities?utm_source=github&utm_campaign=news-api-live-feeds-commodities) | Market researchers tracking commodities coverage |
+| **Finance News** | Financial markets, banking, and investment | [View Feed](https://newsdatahub.com/live/finance?utm_source=github&utm_campaign=news-api-live-feeds-finance) | Financial advisors staying current with markets |
+| **Inflation & Interest Rates** | CPI data, Federal Reserve decisions, and monetary policy | [View Feed](https://newsdatahub.com/live/inflation-interest-rates?utm_source=github&utm_campaign=news-api-live-feeds-inflation-interest-rates) | Investment analysts tracking policy shifts |
+| **Macro Economic News** | GDP, inflation, employment data, and central bank policy | [View Feed](https://newsdatahub.com/live/macro-economic?utm_source=github&utm_campaign=news-api-live-feeds-macro-economic) | Economists monitoring economic data releases |
+| **Entertainment News** | Media, streaming, and entertainment industry | [View Feed](https://newsdatahub.com/live/entertainment?utm_source=github&utm_campaign=news-api-live-feeds-entertainment) | Media companies tracking competitor releases |
+| **Elections News** | US elections, campaigns, and voting | [View Feed](https://newsdatahub.com/live/elections?utm_source=github&utm_campaign=news-api-live-feeds-elections) | Political campaigns monitoring media coverage |
+| **Climate Change News** | Climate crisis, environmental policy, and sustainability | [View Feed](https://newsdatahub.com/live/climate-change?utm_source=github&utm_campaign=news-api-live-feeds-climate-change) | Environmental organizations tracking policy developments |
+| **Walmart News** | Walmart business updates and retail strategy | [View Feed](https://newsdatahub.com/live/walmart?utm_source=github&utm_campaign=news-api-live-feeds-walmart) | Retail analysts monitoring Walmart's strategy |
+| **German News** | German-language news covering politics, business, finance, and technology | [View Feed](https://newsdatahub.com/live/german-news?utm_source=github&utm_campaign=news-api-live-feeds-german-news) | German-speaking audiences and businesses tracking German media |
+| **French News** | French-language news from major French outlets including Franceinfo and France 24 | [View Feed](https://newsdatahub.com/live/french-news?utm_source=github&utm_campaign=news-api-live-feeds-french-news) | French-speaking audiences and international businesses monitoring French developments |
+| **Canadian News (English)** | Canadian English-language news from CBC, CTV, and major regional outlets | [View Feed](https://newsdatahub.com/live/canadian-news-english?utm_source=github&utm_campaign=news-api-live-feeds-canadian-news-english) | Canadian audiences and expats following national and regional coverage |
+| **Belgium News** | Belgian news in French and Dutch from RTBF, La Libre, De Morgen, and Het Laatste Nieuws | [View Feed](https://newsdatahub.com/live/belgium-news?utm_source=github&utm_campaign=news-api-live-feeds-belgium-news) | Belgian audiences and EU analysts tracking Belgian perspectives |
+| **Maritime Logistics** | Marine operations, shipping technology, and maritime trade | [View Feed](https://newsdatahub.com/live/maritime-logistics?utm_source=github&utm_campaign=news-api-live-feeds-maritime-logistics) | Port operators monitoring industry trends |
+| **Maritime Security** | Naval strategy, maritime policy, and maritime law | [View Feed](https://newsdatahub.com/live/maritime-security?utm_source=github&utm_campaign=news-api-live-feeds-maritime-security) | Naval strategists monitoring security developments |
+| **Shipping Logistics** | Container shipping, freight operations, and supply chain management | [View Feed](https://newsdatahub.com/live/shipping-logistics?utm_source=github&utm_campaign=news-api-live-feeds-shipping-logistics) | Freight forwarders tracking shipping rates |
+| **Manufacturing Industry** | Factory fires, accidents, closures, and production disruptions | [View Feed](https://newsdatahub.com/live/manufacturing-industry?utm_source=github&utm_campaign=news-api-live-feeds-manufacturing-industry) | Supply chain managers monitoring facility incidents |
 
 ## How These Feeds Are Built
 
-Each live news feed is powered by the NewsDataHub API [`/v1/news`](https://newsdatahub.com/docs/api-reference/news/#get-news) endpoint with customized query parameters:
+Each live news feed is powered by the NewsDataHub API [`/v1/news`](https://newsdatahub.com/docs/api-reference/news?utm_source=github&utm_campaign=news-api-live-feeds-docs#get-news) endpoint with customized query parameters:
 
 - **Boolean Query Operators**: Combine search terms using AND, OR, and NOT operators for precise filtering
 - **Title Search**: Search within article titles for focused, relevant results (`search_in=title`)
@@ -67,7 +67,7 @@ All feeds query NewsDataHub's continuously updated database of articles from 6,5
 
 ### Example API Calls
 
-Below are curl examples for each feed showing how to replicate them using the NewsDataHub API. Replace `YOUR_API_KEY` with your actual API key from [newsdatahub.com](https://newsdatahub.com).
+Below are curl examples for each feed showing how to replicate them using the NewsDataHub API. Replace `YOUR_API_KEY` with your actual API key from [newsdatahub.com](https://newsdatahub.com?utm_source=github&utm_campaign=news-api-live-feeds-signup).
 
 #### Cybersecurity News
 
@@ -430,9 +430,9 @@ curl -X GET "https://api.newsdatahub.com/v1/news?q=(factory%20OR%20%22manufactur
 
 ## Get Started
 
-1. **Sign up** at [newsdatahub.com](https://newsdatahub.com) to get your API key
-2. **Read the documentation** at [newsdatahub.com/docs](https://newsdatahub.com/docs/api-reference/news/#get-news)
+1. **Sign up** at [newsdatahub.com](https://newsdatahub.com?utm_source=github&utm_campaign=news-api-live-feeds-signup) to get your API key
+2. **Read the documentation** at [newsdatahub.com/docs](https://newsdatahub.com/docs?utm_source=github&utm_campaign=news-api-live-feeds-docs)
 3. **Build your custom news feed** using the examples above
 4. **Explore more features**: topics, sentiment analysis, source filtering, and historical data access
 
-For questions or support, contact us at support@newsdatahub.com or visit our [documentation](https://newsdatahub.com/docs).
+For questions or support, contact us at support@newsdatahub.com or visit our [documentation](https://newsdatahub.com/docs?utm_source=github&utm_campaign=news-api-live-feeds-docs).
